@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply font-sans text-gray-800 antialiased;
+  }
+}
+
+@layer utilities {
+  /* Efeito de pulso no botão WhatsApp fixo */
+  .wpp-ring::before {
+    content: '';
+    @apply absolute inset-0 rounded-full bg-green-400 opacity-60;
+    animation: wpp-ping 1.8s cubic-bezier(0, 0, 0.2, 1) infinite;
+  }
+
+  @keyframes wpp-ping {
+    75%, 100% {
+      transform: scale(1.8);
+      opacity: 0;
+    }
+  }
+}
