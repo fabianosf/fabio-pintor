@@ -186,7 +186,7 @@ function Hero() {
       <div className="relative z-10 mb-6 inline-flex items-center gap-2 bg-white/10 border border-white/20
         rounded-full px-4 py-1.5 text-sm font-medium backdrop-blur-sm">
         <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse" />
-        Atendendo no {CONFIG.estado} e região
+        Atendendo no {CONFIG.cidade} e região
       </div>
 
       {/* Headline principal */}
@@ -348,7 +348,7 @@ function Sobre() {
             </h2>
             <p className="text-gray-600 leading-relaxed mb-4">
               Meu nome é <strong>{CONFIG.nome}</strong> e há {CONFIG.anosExp} anos eu transformo imóveis no{' '}
-              {CONFIG.estado}. Comecei como ajudante e aprendi cada detalhe do ofício — da preparação
+              {CONFIG.cidade}. Comecei como ajudante e aprendi cada detalhe do ofício — da preparação
               da superfície até o acabamento final.
             </p>
             <p className="text-gray-600 leading-relaxed mb-6">
@@ -811,7 +811,7 @@ function Footer() {
             <h3 className="text-xl font-black text-orange-400 mb-3">{CONFIG.empresa}</h3>
             <p className="text-blue-200 text-sm leading-relaxed">
               Pintura residencial, comercial e aplicação de piso porcelanato no{' '}
-              {CONFIG.estado} e região.
+              {CONFIG.cidade} e região.
             </p>
           </div>
 
@@ -842,7 +842,7 @@ function Footer() {
               </a>
               <p className="flex items-center gap-2">
                 <MapPin className="w-4 h-4 text-orange-400 flex-shrink-0" />
-                {CONFIG.estado} e região
+                {CONFIG.cidade} e região
               </p>
             </div>
           </div>
